@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 33.3%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #161b2f;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<h2>"Meet The Team"</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="ani" style="width:100%">
+      <div class="container">
+        <h2>Anindita Dey</h2>
+        <p class="title">Team Leader</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>anindita.dey.bca23@tha.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="shiv" style="width:100%">
+      <div class="container">
+        <h2>Shivangi Roy</h2>
+        <p class="title">Team Member</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>shivangi.roy.bca23@tha.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="sanju" style="width:100%">
+      <div class="container">
+        <h2>Sanjana Singh</h2>
+        <p class="title">Team Member</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>sanjana.singh.bca23@tha.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="mufi" style="width:100%">
+      <div class="container">
+        <h2>Mufaddal Maimoon</h2>
+        <p class="title">Team Member</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mufaddal.maimoon.bca23@tha.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<table>
+			<tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Subject</td></tr>
+			{% for i in a %}
+				<tr><td>{{i.fname}}</td><td>{{i.lname}}</td><td>{{i.email}}</td><td>{{i.subject}}</td></tr>
+				{% endfor %}
+		</table>
+	</body>
+</html>

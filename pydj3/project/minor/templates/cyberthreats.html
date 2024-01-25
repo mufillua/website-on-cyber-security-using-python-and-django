@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+	<title>CYBER THREATS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('parallax1.png');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#blog" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+	<a href="services" class="w3-bar-item w3-button w3-hide-small"><i class=" fa fa-coffee"></i> SERVICES</a>
+	<a href="welcome" class="w3-bar-item w3-button w3-hide-small w3-right "><i class="fa fa-user"></i> WELCOME </a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-grey">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navhome" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+	<a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#blog" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+	<a href="#services" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICES</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<img src="{% static 'image/parallax1.png' %}" width=1200px height=500px>
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">HAWKEYE <span class="w3-hide-small"> PATROL</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Why are cyber threats more painful than stepping on a Lego?</h3>
+  <p class="w3-center"><em>What are cyber threats, how they affect our systems and the trending threats</em></p>
+  
+  <p>An act of malice that aims to steal information, corrupt data, or otherwise interfere with digital life is referred to as a cyberthreat or cybersecurity threat. Cyberthreats can take many different forms, such as computer viruses, data breaches, DoS (Denial of Service) assaults, and other attack methods. Cyber hazards also include the potential for a successful cyber assault with the intent of stealing sensitive data, causing harm to a computer network, or damaging or destroying information technology assets. Cyberthreats might originate from within an organisation from reputable people or from distant areas from unauthorised individuals. </p>
+  <p>Now that we have a basic idea on what a cyber threat is, where exactly does it originate? Here are some of the various threat actors who cause cyber threats - </p>
+  <p><ol><li><strong>HACKTIVITS - </strong>The political ideas and concerns that hacktivists engage in are diverse. The majority of hacktivist organisations are more interested in disseminating propaganda than in destroying infrastructure or interfering with services. Instead of doing the most harm to an institution, their aim is to further their political objective.</li></p>
+  <p><li><strong>ANTAGONIZING NATION-STATES - </strong>Emerging cyber dangers include propaganda, website vandalism, espionage, disruption of vital infrastructure, and even human casualties, according to national cyber warfare programmes. When compared to other threat actors, government-sponsored programmes are becoming more sophisticated and pose advanced dangers. Their expanding capabilities might seriously harm the national security of numerous nations, including the United States, over the long term. Due to their ability to use technology and techniques against the most challenging targets, such as classified networks and crucial facilities like electrical grids and gas control valves, hostile nation-states offer the greatest risk.</li></p>
+  <p><li><strong>TERRORIST ATTACKS - </strong>In order to harm national interests, terrorist organisations are increasingly adopting cyberattacks. Compared to nation-states, they are less adept in cyberattacks and less likely to use them for their own ends. As more technologically savvy generations join the ranks of terrorist organisations, it is conceivable that they will pose serious cyber dangers.</li></p>
+  <p>Cyber threats are of different forms. Each one is unique in its way of attacking a system or organisation. Following are some of the different types of cyber threats, how they attackand what makes them so inevitable.</p>
+  <p><ul><li><strong>MALWARE - </strong>A file or piece of code known as malware—short for "malicious software"—can virtually perform whatever action an attacker desires, including infecting, exploring, stealing, and conducting operations. Furthermore, there are countless ways to infect computer systems due to the wide variety of viruses. Malware exhibits some of the following properties:
+	<ul><li>Give an attacker remote access to a compromised machine.</li></ul></p>
+	<ul><li>Send spam to unknowing recipients from the compromised device.</li></ul></p>
+	<ul><li>Examine the local network of the affected user.</li></ul></p>
+	<ul><li>Steal confidential information.</li></ul></p>
+	<p>Beyond an initial attack vector, malware also employs a variety of techniques to spread to other computer systems.</p>
+	<p>Types of malware attacks - </p>
+	<ul><li>Unaware people may open email attachments containing malicious code and then execute it. If those emails are shared, the malware can infiltrate a company's network even more deeply and further compromise it.</li></ul></p>
+	<ul><li>As users browse and download infected files, file servers, like those based on the common Internet file system (SMB/CIFS) and network file system (NFS), can help malware spread swiftly.</li></ul></p>
+	<ul><li>Malware has the ability to replicate itself on removable media before moving on to computer systems and networks thanks to file-sharing software.</li></ul></p>
+	<ul><li>Remotely exploitable flaws provide hackers access to systems regardless of their location and with little to no assistance from computer users.</li></ul></p>
+	<p><li><strong>SPYWARE - </strong>Any software known as spyware implants itself on your computer and begins secretly tracking your online activity without your knowledge or consent. Spyware is a type of software that secretly collects data about an individual or business and transmits it to third parties. Spyware is frequently referred to as "adware" since in some situations, these may be advertisers or marketing data companies. It is installed without the user's knowledge using techniques including drive-by downloads, trojans bundled with trustworthy applications, or false pop-up windows.</p>
+	<p>Spyware transmits personal information like your name, address, browsing patterns, preferences, interests, or downloads across your internet connection. Other types of spyware can force your device to automatically make calls or send texts, redirect your browser to another website, or display intrusive advertisements even while you are not connected to the internet. A "keylogger" is a type of spy software that takes your username, password, or other login information; it is a sneaky prerequisite for online crime. Unwanted behaviours and a decline in system performance are indications that spyware may be present. It can use disc space, network traffic, and CPU resources. Applications stopping, booting problems, internet connectivity issues, and system crashes are all frequent stability problems.</p></li>
+	<p>How to safeguard yourself from spyware?</p>
+	<ul><li>Utilize a spyware scanner. Numerous anti-spyware tools are available to scan your computer for unwanted tracking software. Although spyware removal from a computer or other 
+	device can be challenging, it can always be quarantined so that it ceases to function. The majority of programmes scan incoming traffic and block any potential dangers to give 
+	continuing anti-spyware protection against the real-time installation of fresh spyware. Anti-spyware solutions require regular updates to stay completely functional, just like any anti-virus programme does.</li></ul>
+	<ul><li>Adapt the browser's security settings. Most browsers let you choose the security level on a scale from "high" to "low." Learn about these settings because some browsers can act as a firewall to prevent unauthorised activities, including the installation of cookies, if requested.</li></ul>
+	<ul><li>Recognize that nothing is ever truly free. With free apps, you typically give your tacit consent to trading tracking for services. By approving to receive targeted advertisements, you "pay" for the app. You can decide whether this is a reasonable trade-off, but the majority of businesses must follow your online actions in order to decide which ads to present to you.</li></ul>
+	<p><li><strong>PHISHING ATTACKS - </strong>Phishing is a sort of social engineering assault frequently used to obtain user data, including login credentials and credit card details. It happens when a victim opens an email, instant message, or text message after being tricked into doing so by an attacker posing as a reliable source. The recipient is subsequently misled into clicking a dangerous link, which can result in the installation of malware, the freezing of the system as part of a ransomware assault, or the disclosure of private data. Devastating outcomes can come from an attack. This includes theft of money or identity from people as well as unauthorised purchases. Furthermore, as part of a bigger attack like an advanced persistent threat (APT) incident, phishing is frequently used to infiltrate business or governmental networks. In the second case, staff members are compromised in order to go over security barriers, spread malware inside a safe setting, or gain access to protected data. A company that falls victim to such an attack usually suffers significant financial losses as well as diminishing market position, image, and customer confidence. Depending on its size, a phishing attempt could turn into a security issue from which a company will find it challenging to recover.Ways to avoid phishing attacks - </p>
+	<ul><li>Due to the additional verification layer it adds when signing in to sensitive applications, two-factor authentication (2FA) is the most effective defence against phishing assaults. 2FA depends on people possessing two things: something they have, like their smartphones, and something they know, such a password and user name. Even when employees' credentials are compromised, 2FA restricts admission because it takes more than just their credentials to gain access.</li></ul>
+	<ul><li>Businesses should use 2FA as well as strong password management guidelines. For instance, employees should not be permitted to reuse passwords across different applications and should be compelled to update their passwords periodically.</li></ul>
+	<ul><li>By encouraging safe habits like not clicking on links in emails from unknown senders, educational efforts can also help lessen the possibility of phishing attempt.</li></ul>
+	<p><li><strong>DENIAL OF SERVICE (DoS) ATTACK - </strong>In a denial-of-service (DoS) attack, a malicious actor tries to make a computer or other device unavailable to its intended users by interfering with the device's regular operation. DoS attacks normally work by overloading or flooding a target machine with requests until regular traffic cannot be processed, causing denial-of-service to additional users. A single computer being used to initiate the attack is what defines a DoS attack. A botnet-based DDoS assault is an example of a sort of DoS attack known as a distributed denial-of-service (DDoS) attack. A DoS attack's main goal is to overload the capacity of a target system in order to deny service to additional requests. By their similarities, the various DoS attack vectors can be categorised - buffer overflow attacks and flood attacks. </p>
+	<p><li><strong>MAN IN THE MIDDLE ATTACKS - </strong>A man-in-the-middle (MITM) attack is a broad term for when an attacker inserts himself into a discussion between a user and an application, either to listen in on the conversation or to mimic one of the parties and make it seem as though a regular flow of information is taking place. An attack's objective is to take personal data, including credit card numbers, account information, and login information. Targets are often the customers of SaaS companies, e-commerce websites, banking apps, and other websites that need signing in. The use of information gathered during an attack may include identity theft, unauthorised financial transfers, or unauthorised password changes. The infiltration phase of an advanced persistent threat (APT) attack can also employ it to obtain access to a guarded perimeter. </p></li></ol>
+	<p>Cyber threats and cyber attacks are getting popular as our world becomes digitised with age. Although these malicious softwares invade an organisation's or an individual's privacy,a lot of effort has been put into creating anti-software applications that help us reduce these risks in our day-to-day lives. Encounetring a cyber attack is scary and can lead to leakageof private information. Therefore, measurements must be taken to keep a check on our systems and keep them virus-free!<p>
+
+	<!-- Container (Blog Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">RELATED ARTICLES</h3>
+    <p class="w3-left">
+      <ul ><span>&#8618;</span><a href="spam"><em>Learn about the basics of spam and its types</em> </a></ul>
+      
+      
+      
+  </p>
+	
+	
+<br><br>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#cyberthreats" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="#" title="hawkeye" target="_blank" class="w3-hover-text-grey">HAWKEYE PATROL</a></p>
+</footer>
+</html>
